@@ -35,22 +35,22 @@
 	    <div class="main">
 
 	      <div class="row">
-
-	        <div class="col-md-6">
-	            <div class="thumbnail" >
+			<!--For loop to display all movies-->
+	        <div v-for="(movie, index) in movies" class="col-md-6">
+	            <div class="thumbnail">
 						<!--Set variables using movies[0] to pull index values from JSON file -->
-						<img class="poster img-fluid" :src="movies[0].posters[0]" />
+						<img class="poster img-fluid" :src="movies[index].posters[0]" />
 						<div class="imageInfo">{{posterindex}}</div>
 						<!--Percentages changed to double curly brackets-->
-						<p class="title">{{movies[0].title}} ({{movies[0].country}})</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[0].iscore}}</p>
-						<p class="runtime">Runtime: {{movies[0].runtime}}</p>
-						<p class="released">Released: {{movies[0].released}} | Rated: {{movies[0].rating}}</p>
-						<p class="websites">Websites: <a> imdb </a> | <a>website</a></p>
+						<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
+						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}}</p>
+						<p class="runtime">Runtime: {{movies[index].runtime}}</p>
+						<p class="released">Released: {{movies[index].released}} | Rated: {{movies[index].rating}}</p>
+						<p class="websites">Websites: <a :href="movies.imdb"> imdb </a> | <a :href="movies[0].imdb">website</a></p>
 						<!--Percentages changed to double curly brackets-->
 			            <div class="social">
-			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[0].likes}}</p>
-			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[0].dislikes}}</p>
+			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes}}</p>
+			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes}}</p>
 			            </div>
 	            </div>
 	        </div>
