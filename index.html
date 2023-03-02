@@ -41,6 +41,7 @@
 						<!--Set variables using movies[0] to pull index values from JSON file -->
 						<!--When images are clicked, function calls the index value in array-->
 						<img v-on:click="posterClick(index)" class="poster img-fluid" :src="movies[index].posters[movies[index].posterindex]" />
+						<!--Upates imageInfo to display number of current posters and total # of posters-->
 						<div class="imageInfo">{{movies[index].posterindex + 1}} of {{movies[index].posters.length}}</div>
 						<!--Percentages changed to double curly brackets-->
 						<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
@@ -51,9 +52,9 @@
 						<!--Percentages changed to double curly brackets-->
 			            <div class="social">
 							<!--When clicked, the thumbs up button increases in the amount of likes-->
-			              <p v-on:click= movies[index].likes++  class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes}}</p>
+			              <p @click= movies[index].likes++  class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[index].likes}}</p>
 						  <!--When clicked, the thumbs up button decreases in the amount of likes-->
-			              <p v-on:click= movies[index].dislikes-- class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes}}</p>
+			              <p @click= movies[index].dislikes--  class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movies[index].dislikes}}</p>
 			            </div>
 	            </div>
 	        </div>
