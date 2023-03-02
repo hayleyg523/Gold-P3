@@ -42,6 +42,66 @@ const vue_app = Vue.createApp({
   },
   methods: {
     /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+    /*Function getMonthText to convert numeric month into text month and format day and year in USA date order*/
+    getMonthText(dateArray) {
+      let month = " ";
+      switch (dateArray[1]) {
+        case 1:
+          monthName = "January";
+          break;
+        case 2:
+          monthName = "February";
+          break;
+        case 3:
+          monthName = "March";
+          break;
+        case 4:
+          monthName = "April";
+          break;
+        case 5:
+          monthName = "May";
+          break;
+        case 6:
+          monthName = "June";
+          break;
+        case 7:
+          monthName = "July";
+          break;
+        case 8:
+          monthName = "August";
+          break;
+        case 9:
+          monthName = "September";
+          break;
+        case 10:
+          monthName = "October";
+          break;
+        case 11:
+          monthName = "November";
+          break;
+        case 12:
+          monthName = "December";
+      }
+
+      return monthName + " " + dateArray[2] + "," + " " + dateArray[0];
+    },
+    /* if statement to shuffle through the images for each movie*/
+    posterClick(index) {
+      if (
+        this.movies[index].posterindex >=
+        this.movies[index].posters.length - 1
+      ) {
+        this.movies[index].posterindex = 0;
+      } else {
+        this.movies[index].posterindex++;
+      }
+    },
+    /* function to change minutes to a string of hours and minutes*/
+    timeText(minutes){
+      var h = Math.trunc(minutes/60);
+      var min = minutes % 60;
+      return h + 'h' + " " + min + "m";
+    }
   },
 });
 
