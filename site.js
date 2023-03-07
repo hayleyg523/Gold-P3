@@ -37,7 +37,7 @@ const vue_app = Vue.createApp({
       /* ADDITIONAL VARIABLES FOR STEP 3 */
       title: "IMDB + Hayley's Top 8 Movies",
       owner: "Hayley",
-      github: "https://github.com/hayleyg523/Movie-Posters.git",
+      github: "https://github.com/hayleyg523/Gold-P3.git",
     };
   },
   methods: {

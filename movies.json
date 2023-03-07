@@ -73,5 +73,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Pitch Perfect",
+            "iscore": 7.1,
+            "rating": "PG-13",
+            "runtime": 112,
+            "released": [2012, 9, 28],
+            "country": "USA",
+            "posters": ["img/pitchperfectposter3.jpg", "img/pitchperfectposter2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt1981677/?ref_=fn_al_tt_1",
+            "website": "https://www.tvinsider.com/show/pitch-perfect/",
+            "likes": 1030,
+            "dislikes": "231",
+            "posterindex": 0
+      },
+      {
+            "title": "Mean Girls",
+            "iscore": 7.1,
+            "rating": "PG-13",
+            "runtime": 97,
+            "released": [2004, 4, 30],
+            "country": "USA",
+            "posters": ["img/meangirlsposter.jpg", "img/meangirlsposter2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0377092/?ref_=nv_sr_srsg_0",
+            "website": "https://www.paramountpictures.com/movies/mean-girls",
+            "likes": 950,
+            "dislikes": "110",
+            "posterindex": 0
+      },
+      {
+            "title": "Back to The Future",
+            "iscore": 8.5,
+            "rating": "PG",
+            "runtime": 116,
+            "released": [1985, 7, 3],
+            "country": "USA",
+            "posters": ["img/backtothefutre.webp", "img/backtothefuture2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0088763/",
+            "website": "https://movieweb.com/back-to-the-future/",
+            "likes": 1350,
+            "dislikes": "200",
+            "posterindex": 0
       }
 ]

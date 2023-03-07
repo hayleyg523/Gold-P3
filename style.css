@@ -5,7 +5,9 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-image: url(img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* This stylizes the header area */
@@ -14,7 +16,7 @@ body {
 }
 .header h1 {
     display: inline-block;
-    color: white;
+    color: black;
 }
 
 /* This stylizes the main page area */
@@ -118,17 +120,6 @@ body {
     color: #ffffff;
 }
 
-/*Add a light-green background and green text on hover*/
-.likes:hover {
-    background-color: #9edd87;
-    color: #008700;
-}
-
-/*Add a light-red background and red text on hover*/
-.dislikes:hover {
-    background-color: #fdd6d6;
-    color: #F65A5B;
-}
 
 /* This makes sure your Github Button is centered */
 .footer {
@@ -142,3 +133,26 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+
+/*Add a light-green background and green text on hover*/
+.likes:hover {
+    background-color: #9edd87;
+    color: #008700;
+}
+
+/*Add a light-red background and red text on hover*/
+.dislikes:hover {
+    background-color: #fdd6d6;
+    color: #F65A5B;
+}
+
+
+.btn-warning {
+    background-color: black;
+    --bs-btn-border-color: white;
+    --bs-btn-color: white;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-active-bg: white;
+}
