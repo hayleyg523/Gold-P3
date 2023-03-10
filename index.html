@@ -48,7 +48,7 @@
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}}</p>
 						<p class="runtime">Runtime: {{timeText(movies[index].runtime)}}</p>
 						<p class="released">Released: {{getMonthText(movies[index].released)}} | Rated: {{movies[index].rating}}</p>
-						<p class="websites">Websites: <a :href="movies[index].imdb"> imdb </a> | <a :href="movies[index].imdb">website</a></p>
+						<p class="websites">Websites: <a :href="movies[index].imdb"> imdb </a> | <a :href="movies[index].website">website</a></p>
 						<!--Percentages changed to double curly brackets-->
 			            <div class="social">
 							<!--When clicked, the thumbs up button increases in the amount of likes-->
